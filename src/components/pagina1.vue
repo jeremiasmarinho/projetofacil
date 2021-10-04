@@ -7,7 +7,7 @@
           <div class="titulo">  
               <div class="conteudo"> 
                    <div>
-                      <h1>Sobre o profissional</h1>
+                      <h1 class="titulopro">Sobre o profissional</h1>
                   </div>
                   <div class="subtitulo">
                     <h3>Dados do profissional</h3>
@@ -56,7 +56,7 @@
       Selecione sua cidade.
     </div>
   </div>
-  <div class="progress" style="height: 20px; width:380px">
+  <div class="progress">
   <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 <h6 class="numerobarra">1 de 2</h6>
 </div>
@@ -87,7 +87,7 @@ export default {
  .fundo{
    padding: 0;
    margin: 0;
-   background-color: yellow;
+   background-color: #FFE766;
    min-width: 100%;
    height: 100%;
    position: absolute;
@@ -104,7 +104,7 @@ export default {
    direction: initial;
    margin: 50px auto;
    border-radius: 30px;
-   box-shadow: 0 0 3em;
+   box-shadow: 0 0 1em #999;
 
  }
  .conteudo{
@@ -122,16 +122,36 @@ export default {
 }
  .img-fluid{
    width: 400px;
-   
+  
    position:absolute;
    
  }
+ .progress{
+
+height: 20px; 
+width:380px; 
+background-color:#FFF;
+
+border-radius: 5px;
+ }
+ .progress-bar{
+background-color:#483698;
+
+border-radius: 5px;
+ }
  .numerobarra{
    padding-left: 130px;
-   color: rgb(111, 0, 255);
+   color: #483698;
  }
  .btn-primary{
    width: 370px;
    border-radius: 15px;
+   background-color: #483698;
+   
+ }
+ .titulopro{
+   color: #483698;
+   
+   
  }
 </style>
