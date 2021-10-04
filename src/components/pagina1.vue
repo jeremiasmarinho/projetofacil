@@ -56,7 +56,11 @@
       Selecione sua cidade.
     </div>
   </div>
-  
+  <div class="progress" style="height: 20px; width:380px">
+  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+<h6 class="numerobarra">1 de 2</h6>
+</div>
+ 
   <div class="col-12">
     <button class="btn btn-primary" type="submit">PRÓXIMO</button>
   </div>
@@ -121,5 +125,13 @@ export default {
    
    position:absolute;
    
+ }
+ .numerobarra{
+   padding-left: 130px;
+   color: rgb(111, 0, 255);
+ }
+ .btn-primary{
+   width: 370px;
+   border-radius: 15px;
  }
 </style>
